@@ -12,7 +12,7 @@ function List({contacts}) {
     return (
         <div>
 
-            <input placeholder="Filter Contact Value" value={filterText} onChange={(e) => setFilterText(e.target.value)}/>
+            <input placeholder="Filter Contact " value={filterText} onChange={(e) => setFilterText(e.target.value)}/>
             <ul>
                 {
                     filtered.map((contact, i) => (<li key={i}> {contact.fullname}</li>))
